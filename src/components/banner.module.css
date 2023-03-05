@@ -1,0 +1,64 @@
+.container {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 3rem;
+}
+
+.title {
+  letter-spacing: -0.025em;
+  font-weight: 800;
+  font-size: 3.2rem;
+  line-height: 100%;
+  padding-top: 5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.title1 {
+  color: var(--text-white-100);
+}
+
+.title2 {
+  color: var(--text-purple-dark);
+}
+
+.subTitle {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.button {
+  background-color: var(--text-purple-dark);
+  color: white;
+  outline: 0;
+  border: 0;
+
+  padding: 1rem 2.5rem;
+  font-size: 115%;
+  line-height: 1.75rem;
+}
+
+@media screen and (min-width: 640px) {
+  .title {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 3.75rem;
+  }
+
+  .button {
+    max-width: 20rem;
+  }
+}
