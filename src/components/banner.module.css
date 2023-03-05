@@ -1,61 +1,74 @@
 .container {
-  min-height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 2rem;
 
-  gap: 3rem;
+  justify-content: space-between;
 }
 
 .title {
+  display: flex;
+  flex-direction: column;
+
   letter-spacing: -0.025em;
   font-weight: 800;
   font-size: 3.2rem;
   line-height: 100%;
-  padding-top: 5rem;
-
-  display: flex;
-  flex-direction: column;
 }
 
 .title1 {
-  color: var(--text-white-100);
+  color: var(--text-white);
 }
 
 .title2 {
-  color: var(--text-purple-dark);
+  color: var(--text-dark);
 }
 
 .subTitle {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 3rem;
+  line-height: 110%;
+  font-family: 'Caveat';
+  color: var(--text-dark);
 }
 
 .button {
-  background-color: var(--text-purple-dark);
-  color: white;
+  background-color: var(--text-green-dark);
+  color: var(--text-white);
   outline: 0;
   border: 0;
+  border-radius: 0.2rem;
 
   padding: 1rem 2.5rem;
-  font-size: 115%;
+  font-size: 125%;
   line-height: 1.75rem;
+  cursor: pointer;
+  box-shadow: 0 0 0.2rem var(--text-green-dark);
 }
 
 @media screen and (min-width: 640px) {
+  .container {
+    align-items: center;
+  }
+
   .title {
     flex-direction: row;
     gap: 0.5rem;
+  }
+
+  .button {
+    max-width: 25rem;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     justify-content: center;
+    align-items: flex-start;
+    min-height: 20rem;
   }
 
-  .title {
-    font-size: 3.75rem;
+  .subTitle {
+    font-size: 2.5rem;
   }
 
   .button {

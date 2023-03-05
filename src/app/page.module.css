@@ -1,0 +1,39 @@
+.headerSection {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+  padding: 1rem 0;
+}
+
+.headerImage {
+  position: relative;
+  width: max(15rem, 16rem);
+  min-height: 16rem;
+  isolation: isolate;
+}
+
+@media screen and (min-width: 768px) {
+  .headerSection {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .headerImage {
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .headerSection {
+    margin: 0 10%;
+    justify-content: space-around;
+  }
+
+  .headerImage {
+    min-width: 30rem;
+    width: 30rem;
+    height: 30rem;
+    margin: 0;
+  }
+}

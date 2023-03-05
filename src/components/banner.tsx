@@ -9,7 +9,7 @@ interface BannerProps {
 
 export default function Banner(props: BannerProps) {
   return (
-    <header className={styles.container}>
+    <div className={styles.container}>
       <h1 className={styles.title}>
         <span className={styles.title1}>Coffee</span>
         <span className={styles.title2}>Connoisseur</span>
@@ -18,6 +18,6 @@ export default function Banner(props: BannerProps) {
       <button className={styles.button} onClick={props.handleClick}>
         {props.buttonText}
       </button>
-    </header>
+    </div>
   );
 }

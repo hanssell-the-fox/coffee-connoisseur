@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 :root {
   --text-default-color: #372b64;
   --text-purple: rgba(67, 56, 202, 1);
   --text-purple-dark: rgba(79, 70, 229, 1);
+
+  --text-white: rgba(229, 231, 235, 1);
   --text-black: rgba(17, 24, 39, 1);
-  --text-white-100: rgba(229, 231, 235, 1);
+  --text-dark: rgb(78, 86, 96);
+
+  --text-orange-dark: rgb(233, 144, 27);
+  --text-orange-light: rgb(238, 168, 73);
+
+  --text-green-dark: rgb(94, 199, 131);
+  --text-green-light: rgb(137, 212, 127);
 }
 
 * {
@@ -27,6 +37,6 @@ body {
   background-position: 50%;
   color: var(--text-default-color);
 
-  padding: 1rem;
-  /* font-size: 115%; */
+  padding: 0 1rem;
+  margin: 0 auto;
 }
