@@ -9,7 +9,7 @@ export default function Home() {
   };
 
   return (
-    <header className={styles.headerSection}>
+    <header className={styles.container}>
       <Banner
         buttonText="View stores nearby"
         handleClick={handleButtonClick}
